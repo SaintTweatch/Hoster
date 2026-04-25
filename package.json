@@ -1,0 +1,21 @@
+{
+  "name": "dayz-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-source self-hosted DayZ server manager (OmegaManager-style alternative).",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "install:all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -k -n backend,frontend -c blue,magenta \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "lint": "echo \"(no global linter configured)\"",
+    "test": "npm --prefix backend test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

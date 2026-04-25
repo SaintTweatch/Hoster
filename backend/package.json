@@ -1,0 +1,33 @@
+{
+  "name": "dayz-manager-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend (Node.js + Express + WebSocket + SQLite) for DayZ Manager.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --watch . --ignore ../database --ignore ../servers --ignore ../logs --ignore ../frontend index.js",
+    "test": "node --test tests/config.test.js tests/modManager.test.js tests/serverManager.test.js",
+    "postinstall": "node ./scripts/rebuild-native.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "fs-extra": "^11.2.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.7.0",
+    "pidusage": "^3.0.2",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.0",
+    "yauzl": "^3.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

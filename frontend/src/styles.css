@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(ellipse at top, #131923 0%, #07090d 60%);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0d12;
+}
+::-webkit-scrollbar-thumb {
+  background: #232a37;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2f3848;
+}
+
+@layer components {
+  .card {
+    @apply bg-ink-700/70 border border-ink-500/60 rounded-xl shadow-lg backdrop-blur;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 hover:bg-brand-500 text-white;
+  }
+  .btn-secondary {
+    @apply btn bg-ink-500 hover:bg-ink-400 text-ink-100;
+  }
+  .btn-danger {
+    @apply btn bg-red-600/90 hover:bg-red-500 text-white;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-ink-600 text-ink-100;
+  }
+  .input {
+    @apply w-full px-3 py-2 bg-ink-800 border border-ink-500 text-ink-100 placeholder-ink-200/40 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-500/60 focus:border-brand-500;
+  }
+  .label {
+    @apply block text-xs uppercase tracking-wide text-ink-200 mb-1;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-running { @apply badge bg-emerald-500/15 text-emerald-300 border border-emerald-500/30; }
+  .badge-stopped { @apply badge bg-ink-500 text-ink-100 border border-ink-400/40; }
+  .badge-crashed { @apply badge bg-red-500/15 text-red-300 border border-red-500/30; }
+  .badge-starting,
+  .badge-stopping,
+  .badge-installing,
+  .badge-updating { @apply badge bg-amber-500/15 text-amber-300 border border-amber-500/30; }
+}
+
+.console-line {
+  font-family: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.console-stdout { color: #cfd6e4; }
+.console-stderr { color: #ff9b9b; }
+.console-system { color: #9ad9ff; font-style: italic; }

@@ -1,0 +1,21 @@
+node_modules/
+**/node_modules/
+.env
+.env.local
+*.log
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db
+
+# DayZ Manager runtime data
+database/*.sqlite
+database/*.sqlite-journal
+database/*.db
+servers/*/
+!servers/.gitkeep
+logs/*.log
+logs/**/*.log
+steamcmd/bin/
+configs/local-*.json
