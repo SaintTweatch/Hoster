@@ -1,4 +1,4 @@
-# DayZ Manager — v1.0.0
+# DayZ Hoster — v1.0.0
 
 An open-source, self-hosted **DayZ dedicated server manager** with a beginner-friendly web
 dashboard and a production-ready Node.js backend. Install, configure, run, monitor, and mod
