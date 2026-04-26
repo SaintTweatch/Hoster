@@ -85,6 +85,7 @@ DayZ-Hoster/
 | **Node.js 18.17+ LTS**     | https://nodejs.org/ (use the LTS installer).                          |
 | **C/C++ build tools**      | Required to build `better-sqlite3`. On Windows: `npm i -g windows-build-tools` is no longer needed; the Node 18+ MSI now ships with the necessary toolchain. On Linux: `sudo apt install build-essential python3`. |
 | **Open UDP ports**         | Default 2302 (game) and 27016 (Steam query). Forward in your router for public hosting. |
+| **Visual studio**          | Install Lastest release and install (Desktop development with C++) in Visual studio |
 | **Disk space**             | DayZ server is ~6–8 GB; each mod adds 100 MB–4 GB.                    |
 
 > SteamCMD itself does **not** need to be installed manually – the manager downloads and
