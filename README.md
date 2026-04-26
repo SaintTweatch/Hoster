@@ -6,6 +6,8 @@ your DayZ servers without ever touching a command line.
 
 > 100% free. No telemetry. No cloud lock-in. Works offline. MIT licensed.
 
+Please join our discord server to be the first to know of future updates and to report any bugs or issues found: https://discord.gg/JzCA8XFrEX
+
 ---
 
 ## Features
