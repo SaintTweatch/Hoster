@@ -50,7 +50,7 @@ your DayZ servers without ever touching a command line.
 Folders:
 
 ```
-DayZ-Manager/
+DayZ-Hoster/
 ├── backend/             Node.js / Express / WebSocket
 │   ├── controllers/     HTTP handlers
 │   ├── services/        Business logic (lifecycle, mods, config, steam, logs, settings)
@@ -94,7 +94,7 @@ DayZ-Manager/
 
 ```bat
 :: 1. Open this folder in a normal command prompt
-cd C:\Users\You\Desktop\DayZ-Manager-v1.0.0
+cd C:\Users\You\Desktop\DayZ-Hoster-v1.0.0
 
 :: 2. Install all dependencies (root + backend + frontend)
 scripts\install.bat
